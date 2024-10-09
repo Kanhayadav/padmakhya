@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+/*faster one font for login  text*/
+
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+/*Federo font for what is your name  text*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+/*Mansalva carsiv*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+/*Marcellus SC footer ke leyee*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #201F1F;
+}
+
+
+
+nav{
+    width: 100%;
+    display: flex;
+    margin-top:1rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.col_1 img{
+    width:7.8rem;
+    height: 6rem;
+}
+
+
+
+nav div a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin:5px;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+section form{
+    padding: 2rem;
+}
+
+input[type="password" i] {
+    margin: 20px 0px 20px 0px;
+}
+
+section .min_con{
+    background:rgb(171, 126, 20);
+    width: 19rem;
+    height: max-content;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+#navbar {
+    width: 100%;
+    margin: 0% 0% 3% 0%;
+    padding: 2rem;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100%;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 133px;
+    height: 99px;
+}
+
+#navbar .ul_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ul_container a .item {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Federo', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 3vw, 1rem);
+    padding: 0.8rem;
+    margin: 5px;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+    border-radius: 2px;
+}
+
+.ul_container #active {
+    background: #145363;
+    color: #201F1F;
+}
+
+.ul_container #active:hover {
+    background: #145363;
+    color: white;
+}
+
+.ul_container a .item:hover {
+    background: white;
+    color: black;
+}
+
+.ul_container li {
+    margin: 1rem;
+}
+
+#main_outer {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-items: center;
+    padding: 4rem 0rem 0rem 0rem;
+    justify-content: center;
+}
+
+#login {
+    text-align: center;
+    display: grid;
+    width: 90%;
+    height: 900px;
+    border-radius: 29px;
+    animation: bg-animation .8s infinite;
+    align-content: center;
+    justify-items: center;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+@media only screen and (max-width: 924px) {
+    #login {
+        height: 710px;
+        border-radius: 12px;
+    }
+    .ul_container a .item {
+        font-size: 14px;
+        padding: 0.3rem;
+        margin: 2px;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-image: linear-gradient(120deg, #FF844F, #FFF500);
+    }
+    10% {
+        background-image: linear-gradient(130deg, #FF844F, #FFF500);
+    }
+    20% {
+        background-image: linear-gradient(140deg, #FF844F, #FFF500);
+    }
+    30% {
+        background-image: linear-gradient(150deg, #FF844F, #FFF500);
+    }
+    40% {
+        background-image: linear-gradient(160deg, #FF844F, #FFF500);
+    }
+    50% {
+        background-image: linear-gradient(170deg, #FF844F, #FFF500);
+    }
+    60% {
+        background-image: linear-gradient(160deg, #FF844F, #FFF500);
+    }
+    70% {
+        background-image: linear-gradient(150deg, #FF844F, #FFF500);
+    }
+    80% {
+        background-image: linear-gradient(140deg, #FF844F, #FFF500);
+    }
+    90% {
+        background-image: linear-gradient(130deg, #FF844F, #FFF500);
+    }
+    100% {
+        background-image: linear-gradient(120deg, #FF844F, #FFF500);
+    }
+}
+
+#login .outerbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login .outerbox .login {
+    width: 100%;
+    padding: 1rem 2rem 3rem 2rem;
+    color: #145363;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    letter-spacing: 1vw;
+    font-family: 'Faster One', cursive;
+}
+
+@media only screen and (max-width: 608px) {
+    #login .outerbox .login {
+        font-size: 57px;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+    #login .outerbox .login {
+        font-size: 45px;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+}
+
+#login .outerbox form {
+    width: 98%;
+    height: fit-content;
+    display: grid;
+    justify-items: center;
+}
+
+#login .outerbox form input[type="text" i],
+[type="password" i],
+[type="submit" i] {
+    background: rgba(255, 255, 255, 0.427);
+    border-radius: 10vw;
+    height: 6vh;
+    border-color: transparent;
+    width: 43vw;
+    text-align: center;
+    box-shadow: 6px 5px 0px -1px;
+    outline: none;
+    margin: 1rem 0rem 2rem 0rem;
+    color: #145363;
+    transition: background-color .1s ease-in-out;
+    font-size: 1.3rem;
+    font-family: 'Federo', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 608px) {
+    #login .outerbox form input[type="text"i],
+    [type="password" i],
+    [type="submit" i] {
+        width: 43vw;
+        height: 44px;
+        font-size: calc(11px + 0.7vw);
+        border-radius: 15px;
+    }
+}
+
+#login .outerbox form input:hover {
+    background-color: rgba(83, 83, 83, 0.291);
+}
+
+#submit_small {
+    margin-top: 2rem;
+}
+
+
+#login .outerbox label {
+    font-family: 'Federo', sans-serif;
+    color: #145363;
+    font-size: calc(18px + 0.5vw);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 800px;
+    margin-top: 10rem;
+    background-color: #FF844F;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1460px) {
+    footer {
+        height: 779px;
+    }
+}
+
+@media only screen and (max-width: 1395px) {
+    footer {
+        height: 763px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    footer {
+        height: 745px;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    footer {
+        height: 847px;
+    }
+}
+
+@media only screen and (max-width: 996px) {
+    footer {
+        height: 938px;
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    footer {
+        height: 848px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    footer {
+        height: 846px;
+    }
+}
+
+footer .footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 805px;
+}
+
+footer .footer_container .inner_container {
+    width: 100%;
+    height: 740px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+footer .footer_container .inner_container .footer_final {
+    width: 100%;
+    height: 322px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer .footer_container .inner_container .footer_final i {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Marcellus SC', serif;
+}
+
+footer .footer_container .inner_container .footer_final h2 {
+    color: white;
+    font-size: 208px;
+    text-shadow: 0px 0px 10px;
+    font-family: 'Marcellus SC', serif;
+    animation: breathe 1.2s infinite ease-in-out;
+}
+
+@media only screen and (max-width: 1460px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 124px;
+    }
+}
+
+@media only screen and (max-width:1395px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width:899px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (max-width:646px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 66px;
+    }
+}
+
+@media only screen and (max-width:608px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width:496px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 58px;
+    }
+}
+
+@media only screen and (max-width:443px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:408px) {
+    footer .footer_container .inner_container .footer_final h2 {
+        font-size: 40px;
+    }
+}
+
+footer .footer_container .inner_container .footer_final span {
+    color: white;
+    font-size: 180px;
+    font-family: 'Marcellus SC', serif;
+}
+
+@media only screen and (max-width: 1460px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 140px;
+    }
+}
+
+@media only screen and (max-width:1395px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 120px;
+    }
+}
+
+@media only screen and (max-width:899px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width:646px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width:608px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width:496px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 58px;
+    }
+}
+
+@media only screen and (max-width:443px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:408px) {
+    footer .footer_container .inner_container .footer_final span {
+        font-size: 40px;
+    }
+}
+
+footer .footer_container .inner_container .holder {
+    width: 96%;
+    height: fit-content;
+    display: flex;
+    margin-top: 4rem;
+    place-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+@media only screen and (max-width: 1066px) {
+    footer .footer_container .inner_container .holder {
+        height: 640px;
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    footer .footer_container .inner_container .holder {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}
+
+footer .footer_container .inner_container h1 {
+    font-family: 'Mansalva', cursive;
+    font-size: clamp(1rem, 9vw, 4.5rem);
+    color: #145363;
+    text-align: center;
+    padding: 3rem;
+}
+
+@media only screen and (max-width:1250px) {
+    footer .footer_container .inner_container h1 {
+        padding: 2.5rem 0.7rem;
+    }
+}
+
+footer .footer_container .inner_container .heading {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Marcellus SC', serif;
+    font-size: clamp(1.1rem, 1.5vw, 2rem);
+    color: #145363;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footer_container .inner_container .heading p {
+    color: white;
+    text-align: center;
+    font-size: clamp(.75rem, 1.5vw, 1rem);
+}
+
+footer .footer_container .inner_container .get-notified😊 {
+    color: white;
+    font-size: 30px;
+    width: 280px;
+    height: 70px;
+    border-radius: 25px;
+    outline: none;
+    background-color: #145363;
+    font-family: 'Marcellus SC', serif;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+@media only screen and (max-width: 1460px) {
+    footer .footer_container .inner_container .get-notified😊 {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        width: 227px;
+        height: 58px;
+    }
+}
+
+@media only screen and (max-width: 1167px) {
+    footer .footer_container .inner_container .get-notified😊 {
+        width: 198px;
+    }
+}
+
+@media only screen and (max-width: 1046px) {
+    footer .footer_container .inner_container .get-notified😊 {
+        width: 158px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    footer .footer_container .inner_container .get-notified😊 {
+        width: 129px;
+        height: 40px;
+    }
+}
+
+footer .footer_container .inner_container .get-notified😊:hover {
+    background-color: #134855;
+    box-shadow: 2px 2px 19px 3px #134855;
+}
+
+#vali {
+    color: white;
+    text-align: center;
+}
+
+
+/*FRAGRANCE STYLING MINI BOXES :)ś*/

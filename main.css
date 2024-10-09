@@ -1,0 +1,112 @@
+#login1 {
+    text-align: center;
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    border-radius: 29px;
+    animation: bg-animation .9s infinite;
+    justify-items: center;
+    margin: 0rem 0rem 2rem 0rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.box1con{
+    width: clamp(200px, 50%, 400px);
+    height: fit-content;
+    padding: 1rem;
+    background-color: #1E1E1E;
+    margin: 45px 21px;
+    border-radius: 3%;
+    transition: 0.4s;
+}
+.box1con:hover{
+    transform: scale(1.1);
+}
+.box1con img{
+    width: 87%;
+    height: 71%;
+    padding: 9px 0px 20px 0px;
+}
+
+.box1con .btn1{
+padding: 0px 15px 0px 15px;
+border:none;
+cursor: pointer;
+border-radius: 3%;
+margin:7px;
+background-color:rgba(137, 126, 48, 0.935);
+color:white;
+transition: 0.9s;
+}
+
+.box1con .btn1:hover{
+padding: 0px 25px;
+    }
+
+.box1con p{
+    color:white;
+    font-size: clamp(0.78rem, 0.7vw, 1.4rem);
+    font-family: 'Federo', sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fe9451;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Federo', sans-serif;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #e08d20;
+    transform: scale(1.04);
+    border-radius: 5px;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -347px;
+    width: 326px;
+    height: 100%;
+    background-color: #1a1717;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    overflow-y: auto;
+    transition: right 0.3s;
+    color: white;
+    font-family: 'Federo', sans-serif;
+}
+
+.cart.open {
+    right: 0;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#card {
+    margin-top: 20px;
+}
